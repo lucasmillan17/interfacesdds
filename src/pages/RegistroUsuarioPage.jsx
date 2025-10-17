@@ -4,6 +4,7 @@ import Select from "@mui/material/Select";
 import { useState } from 'react';
 import { InputLabel } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
+import './RegistroUsuarioPageStyles.css'
 
 function RegistroUsuarioPage() {
 
@@ -14,34 +15,9 @@ function RegistroUsuarioPage() {
  };
 
  return (
-  <div
-      style={{
-        fontFamily: 'Arial, sans-serif',
-        gap: '20px',
-        maxWidth: '100vh',
-        margin: '0 auto',
-        backgroundColor: '#fff',
-        padding: '10px',
-        borderRadius: '5px',
-        boxShadow: '0 0 5px rgba(0,0,0,0.1)',
-        maxHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-      }}>
-    <span style={{ color: '#333', fontSize: '18px', fontWeight: 'bold' }}>Registro de usuarios</span>
-      <form className="formulario" 
-      style={
-        {
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '20px',
-          maxWidth: '100vh',
-          margin: '0 auto',
-          backgroundColor: '#fff', padding: '10px',
-          borderRadius: '5px',
-        }
-        }>
+  <div className="registro-usuario-container">
+    <span>Registro de usuarios</span>
+      <form className="formulario-container">
         <TextField
             required
             label="Nombre"

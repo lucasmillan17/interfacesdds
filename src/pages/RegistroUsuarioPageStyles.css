@@ -1,0 +1,28 @@
+.registro-usuario-container {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 20px;
+  max-width: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-container {
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}

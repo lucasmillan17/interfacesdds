@@ -1,0 +1,76 @@
+.container {
+  font-family: Roboto, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "text date"
+    "text date"
+    "button button";
+  height: 100%;
+  background-color: #fff;
+  padding-top: 15px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0.1, 0.1, 0.1);
+}
+
+.text-fields{
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  height: 80vh;
+}
+
+.header{
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 3px 6px rgba(0, 0.1, 0.1, 0.1);
+  display: flex;
+  align-items: flex-start;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 10px 10px 30px;
+  width: 50dvh;
+}
+
+.date-selectors{
+  grid-area: date;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  height: 80vh;
+}
+
+.date-range-picker{
+  grid-area: date-range;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0.1, 0.1, 0.1);
+}
+
+.time-range-picker{
+  grid-area: time-range;
+}
+
+.day-selector{
+  grid-area: day-selector;
+}
+
+.button{
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.MuiPickersLayout-root {
+  transform: scale(0.85);
+  transform-origin: top center;
+}
