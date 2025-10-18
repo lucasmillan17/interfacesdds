@@ -1,8 +1,3 @@
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import dayjs from 'dayjs';
-import * as React from "react";
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { Button, ToggleButtonGroup, ToggleButton, Box } from '@mui/material';
 import TimeRangePicker from '../components/TimeRangePicker';
 import { useState } from 'react';
@@ -14,7 +9,7 @@ import './PublicarTallerPageStyles.css'
 
 function PublicarTallerPage() {
 
-  const [days, setDays] = React.useState([]);
+  const [days, setDays] = useState([]);
 
   const handleDaysChange = (event, newDays) => {
     setDays(newDays);
@@ -80,7 +75,6 @@ function PublicarTallerPage() {
     
     <Button variant='contained' className='button'>Publicar Taller</Button>
     
-
   </div>
 
 )

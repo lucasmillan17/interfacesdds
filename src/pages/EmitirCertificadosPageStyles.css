@@ -1,0 +1,43 @@
+.emitir-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    'header header' 
+    'student-info taller-info'
+    'emitir-button emitir-button';
+    font-family: Roboto, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 15px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0.1, 0.1, 0.1);
+    gap: 20px;
+}
+
+.student-info-container{
+    display: flex;
+    flex-direction: column;
+    grid-area: student-info;
+    padding: 10px;
+    gap: 20px;
+}
+
+.taller-info-container{
+    display: flex;
+    flex-direction: column;
+    grid-area: taller-info;
+    padding: 10px;
+    gap: 20px;
+}
+
+.emitir-button{
+    grid-area: emitir-button;
+    padding: 10px;
+}
+
+.header{
+    grid-area: header;
+}
